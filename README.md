@@ -8,7 +8,7 @@ The code requires [protein-bert](https://github.com/nadavbra/protein_bert), and 
 ## Binding predictions
 Assemble the pretrained model model.p for BindZFpredictor by concatenating its splits in the folder BindZF_predictor/code/
 
-'cat x?? > model.p'
+`cat x?? > model.p`
 
 Call BindZFpredictor on a csv file containing (a description of) the zinc fingers (and their context) and get the predictions in a tsv file with the following commands (the first one for the human ZFs, the second one for the mouse ZFs) :
 
