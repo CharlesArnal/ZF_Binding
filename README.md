@@ -12,7 +12,10 @@ Assemble the pretrained model model.p for BindZFpredictor by concatenating its s
 
 Call BindZFpredictor on a csv file containing (a description of) the zinc fingers (and their context) and get the predictions in a tsv file with the following commands (the first one for the human ZFs, the second one for the mouse ZFs) :
 
-```python3  BindZF_predictor/code/main_bindzfpredictor_predict.py -in Zkscan3_exps/Zkscan3_ZFs_df_human_for_binding_predictions.csv -out Zkscan3_exps/Zkscan3_binding_preds_human.tsv -m BindZF_predictor/code/model.p -e BindZF_predictor/code/encoder.p -r 1``` 
+```
+python3  BindZF_predictor/code/main_bindzfpredictor_predict.py -in Zkscan3_exps/Zkscan3_ZFs_df_human_for_binding_predictions.csv -out Zkscan3_exps/Zkscan3_binding_preds_human.tsv -m BindZF_predictor/code/model.p -e BindZF_predictor/code/encoder.p -r 1
+``` 
+
 ```python3  BindZF_predictor/code/main_bindzfpredictor_predict.py -in Zkscan3_exps/Zkscan3_ZFs_df_mouse_for_binding_predictions.csv -out Zkscan3_exps/Zkscan3_binding_preds_mouse.tsv -m BindZF_predictor/code/model.p -e BindZF_predictor/code/encoder.p -r 1```
 
 The file `turn_sequence_into_csv_for_binding_pred.py` can help you create csv files in the correct format.
